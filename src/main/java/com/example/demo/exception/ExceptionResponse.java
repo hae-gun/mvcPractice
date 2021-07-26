@@ -1,13 +1,15 @@
-package com.example.demo;
+package com.example.demo.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-//lombok
+import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class HelloWorldBean {
+public class ExceptionResponse {
+    private Date timestamp;
     private String message;
+    private String details;
 }
