@@ -1,5 +1,6 @@
 package com.example.demo.user;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -15,4 +16,9 @@ public class User {
     private String name;
     @Past
     private Date joinDate;
+
+    @JsonIgnore
+    private String password;
+    @JsonIgnore
+    private String ssn;
 }
